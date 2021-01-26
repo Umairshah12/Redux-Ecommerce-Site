@@ -14,6 +14,9 @@ import { SingleImageClicked } from "../Redux/actions/cartAction";
 import { AddToCart } from "../Redux/actions/cartAction";
 import currencyFormater from "currency-formatter";
 import { useDispatch } from "react-redux";
+
+// first branch changes
+
 function ProductList() {
   const { products } = useSelector((state) => state.CartItemReducer);
   // console.log("products", products);
