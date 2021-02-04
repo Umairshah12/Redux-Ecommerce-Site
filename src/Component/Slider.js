@@ -12,11 +12,11 @@ function Slider() {
         {sliderImages &&
           sliderImages.map((images) => {
             return (
-              <>
+              <div key={images.id}>
                 <div>
                   <img className="carousel-img" alt="" src={images.img} />
                 </div>
-              </>
+              </div>
             );
           })}
       </Carousel>
