@@ -1,3 +1,5 @@
+import axios from "axios";
+
 export const IMAGE_CLICKED = "IMAGE_CLICKED";
 export const ADD_TO_CART = "ADD_TO_CART";
 export const ADD_CART_QUANTITY = "ADD_CART_QUANTITY";
@@ -6,6 +8,24 @@ export const REMOVE_CART_ITEM = "REMOVE_CART_ITEM";
 export const CLEAR_CART = "CLEAR_CART";
 export const INC_CART_QUANTITY = "INC_CART_QUANTITY";
 export const ACCESS_TOKEN = "ACCESS_TOKEN";
+export const FILTER_ITEM = "FILTER_ITEM";
+export const FETCH_ITEM = "FETCH_ITEM";
+export const USERS_ERROR = "USERS_ERROR";
+
+// export const fetchData = () => async (dispatch) => {
+//   try {
+//     const res = await axios.get(`http://localhost:3001/products`);
+//     dispatch({
+//       type: FETCH_ITEM,
+//       payload: { items: res.data },
+//     });
+//   } catch (e) {
+//     dispatch({
+//       type: USERS_ERROR,
+//       payload: console.log(e),
+//     });
+//   }
+// };
 
 export const SingleImageClicked = (id) => {
   return {
@@ -52,5 +72,20 @@ export const tokenData = (token, addresses) => {
   return {
     type: ACCESS_TOKEN,
     payload: { token, addresses },
+  };
+};
+
+export const filterAction = (products, size) => {
+  return {
+    type: FILTER_ITEM,
+    payload: {
+      size: size,
+      item:
+        size === ""
+          ? products
+          : products.filter(
+              (a) => a.availableSizes.indexOf(size.toUpperCase()) >= 0
+            ),
+    },
   };
 };

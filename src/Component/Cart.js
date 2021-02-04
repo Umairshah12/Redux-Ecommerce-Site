@@ -65,7 +65,7 @@ function Cart() {
                   </div>
                   {addedItems.map((item) => {
                     return (
-                      <>
+                      <div key={item.id}>
                         <div className="row vertical-align">
                           <div className="col-2">
                             <div className="cart-image cart-size-image">
@@ -133,7 +133,7 @@ function Cart() {
                             </div>
                           </div>
                         </div>
-                      </>
+                      </div>
                     );
                   })}
                 </div>
@@ -161,7 +161,7 @@ function Cart() {
                         <button
                           className="clear-cart"
                           onClick={() => {
-                            dispatch(clearCart);
+                            dispatch(clearCart());
                           }}
                         >
                           clear cart
