@@ -13,7 +13,6 @@ import {
   DecCartQuantity,
   RemoveCartItem,
   clearCart,
-  tokenData,
 } from "../Redux/actions/cartAction";
 
 function Cart() {
