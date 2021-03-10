@@ -1,16 +1,12 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import img7 from "../assets/images/img7.jpg";
-import Button from "@material-ui/core/Button";
 import DeleteIcon from "@material-ui/icons/Delete";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { useEffect } from "react";
 import currencyFormater from "currency-formatter";
 import { Link } from "react-router-dom";
-import StripeCheckout from "react-stripe-checkout";
 
 import {
   incCartQuatity,
@@ -136,12 +132,7 @@ function Cart() {
                         <div className="col-6">
                           {currencyFormater.format(totalPrice, { code: "USD" })}
                         </div>
-                        <StripeCheckout
-                          stripeKey="pk_test_ik94tbBkgkFCcAgqvZoUrYIn00oR37X0aE"
-                          token={() => {
-                            dispatch(tokenData());
-                          }}
-                        />
+
                         {/* <button className="checkout-button">checkout</button> */}
                         <button
                           className="clear-cart"
