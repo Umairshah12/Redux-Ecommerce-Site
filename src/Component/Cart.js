@@ -7,7 +7,7 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import currencyFormater from "currency-formatter";
 import { Link } from "react-router-dom";
-
+// checkout button removed
 import {
   incCartQuatity,
   DecCartQuantity,
