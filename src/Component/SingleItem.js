@@ -18,6 +18,7 @@ function SingleItem() {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
   const { singleProduct } = useSelector((state) => state.CartItemReducer);
+  console.log("single product", singleProduct);
   const decQuantity = () => {
     if (quantity > 1) {
       setQuantity(quantity - 1);

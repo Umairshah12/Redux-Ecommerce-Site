@@ -11,6 +11,8 @@ import {
   CLEAR_CART,
   IMAGE_CLICKED,
   ACCESS_TOKEN,
+  FILTER_ITEM,
+  FETCH_ITEM,
 } from "../actions/cartAction";
 
 const initialState = {
@@ -18,6 +20,8 @@ const initialState = {
   sliderImages: sliderImages,
   singleProduct: {},
   addedItems: [],
+  filteredItem: [],
+  size: "",
   totalPrice: 0,
   totalQuantity: 0,
 };
@@ -116,9 +120,12 @@ export function CartItemReducer(state = initialState, action) {
         products: cartAddedItems,
       };
 
-    case ACCESS_TOKEN:
-      const { token, addresses } = action.payload;
-      console.log("token", { token, addresses });
+    case FILTER_ITEM:
+      return {
+        ...state,
+        filteredItem: action.payload.item,
+        size: action.payload.size,
+      };
 
     default:
       return state;
