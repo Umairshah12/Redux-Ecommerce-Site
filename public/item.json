@@ -1,0 +1,84 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "prodImg": "assets/images/img1.jpg",
+      "prodTitle": "Luxery Shoes",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 200,
+      "avaliableSizes": ["X", "L", "M", "XXL", "XL"],
+      "inCart": false,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "prodImg": "assets/images/img2.jpg",
+      "prodTitle": "Luxery Shoes",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 500,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "inCart": false,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "prodImg": "assets/images/img3.jpg",
+      "prodTitle": "Luxery Shoes",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 600,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "inCart": false,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "prodImg": "assets/images/img4.jpeg",
+      "prodTitle": "Luxery Shoes",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 300,
+      "inCart": false,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "quantity": 1
+    },
+    {
+      "id": 5,
+      "prodImg": "assets/images/img5.jpg",
+      "prodTitle": "Sports Watches",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 300,
+      "inCart": false,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "quantity": 1
+    },
+    {
+      "id": 6,
+      "prodImg": "assets/images/img6.jpg",
+      "prodTitle": "Sports Watches",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 100,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "inCart": false,
+      "quantity": 1
+    },
+    {
+      "id": 7,
+      "prodImg": "assets/images/img7.jpg",
+      "prodTitle": "Sports Watches",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 100,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "inCart": false,
+      "quantity": 1
+    },
+    {
+      "id": 8,
+      "prodImg": "assets/images/img8.jpg",
+      "prodTitle": "Sports Watches",
+      "prodDetail": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "prodPrice": 100,
+      "avaliableSizes": ["X", "L", "S", "M", "XXL", "XL"],
+      "inCart": false,
+      "quantity": 1
+    }
+  ]
+}

@@ -1,5 +1,3 @@
-import { Switch } from "@material-ui/core";
-import { SingleBedSharp } from "@material-ui/icons";
 import CartList from "../../Component/ItemsArray/ProductList";
 import sliderImages from "../../Component/ItemsArray/sliderImages";
 
@@ -10,7 +8,6 @@ import {
   REMOVE_CART_ITEM,
   CLEAR_CART,
   IMAGE_CLICKED,
-  ACCESS_TOKEN,
   FILTER_ITEM,
   FETCH_ITEM,
 } from "../actions/cartAction";

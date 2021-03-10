@@ -1,5 +1,3 @@
-import axios from "axios";
-
 export const IMAGE_CLICKED = "IMAGE_CLICKED";
 export const ADD_TO_CART = "ADD_TO_CART";
 export const ADD_CART_QUANTITY = "ADD_CART_QUANTITY";
